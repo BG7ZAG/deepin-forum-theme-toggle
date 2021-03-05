@@ -1,0 +1,260 @@
+/* 网页大背景 */
+.ant-alert, body {
+    color: #eee !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: #eee !important;
+}
+body app-root app-bbs>div {
+    background-color: #ccc !important;
+}
+/* 页面头部，有搜索框的部分 */
+.top{
+    background-color: #252525 !important;
+}
+ul > li span{
+    color: #eee ;
+}
+ul > .activeNav span{
+    color: #992 ;
+}
+.search_box {
+    background-color: #333 !important;
+    border: 1px solid #444 !important;
+}
+.search_box > div {
+    border-right: none !important;
+}
+.type_search {
+    color: #aaa !important;
+    background-color: #444;
+    border-radius: 8px 0 0 8px;
+    /* 这里可以要做一个箭头图标!!! */
+}
+.search_box > input {
+    background-color: #333;
+}
+.search_box > .button {
+    background-color: #2a6bc7 !important;
+}
+.userInfoMenuWrap *{
+    background-color: #222 !important;
+}
+.userInfoMenuWrap > *{
+    box-shadow: 0px 3px 10px 10px rgba(0, 0, 0, .2) !important;
+}
+.userInfoMenuWrap .userName{
+    color: #eee !important;
+}
+/* 正文部分 */
+.comment {
+    background-color: #333 !important;
+    border: 1px solid #555 !important;
+}
+.box_title {
+    background-color: #333 !important;
+    border-bottom: 1px solid #555 !important;
+}
+.box_title li {
+    color: #ddd;
+}
+.comment_nav > ul > li {
+    color: #ddd !important;
+}
+.comment_nav > ul > .activeNav {
+    border-bottom: 4px solid #1979ff;
+}
+.comment_nav .comment_l > span  > span {
+    color: #ddd !important;
+}
+.post_lin_pc {
+    color: #ddd !important;
+}
+.post .postWrap {
+    border-bottom: 1px solid #444 !important;
+}
+.main_left div .post_pc .post:hover {
+    background-color: #333 !important;
+}
+
+.myPage button ,
+.position_page button{
+    background: none !important;
+    background-color: #444 !important;
+    border: 1px solid #555;
+    color: #aaa;
+    box-shadow: none !important;
+}
+.myPage form
+.position_page form {
+    color: #eee;
+}
+form input {
+    background: none !important;
+    background-color: #444 !important;
+    color: #aaa;
+}
+.myPage button.active 
+.position_page button.active {
+    border: 3px solid #1979ff;
+}
+/* 侧边模块 */
+.module_box {
+    background-color: #333 !important;
+    border: 1px solid #555 !important;
+}
+.title {
+    color: #eee !important;
+}
+.main_right_item {
+    border-bottom: 1px solid #444 !important;
+}
+.box_ul > li span {
+    color: #eee;
+}
+.module_box .box_ul_type > li .box_su {
+    color: #eee !important;
+}
+.box_rank > li > .rank_name {
+    color: #eee;
+}
+/* ********************以上是针对首页面暗黑化，下面是板块界面*********************** */
+.main .box {
+    background-color: #333 !important;
+    border: 1px solid #555 !important;
+}
+.row_one .link {
+    color: #eee !important;
+}
+.row_three > span > span {
+    color: #aaa !important;
+}
+/* ***********************下面是针对帖子浏览界面的黑化*************************** */
+.pot_title{
+    color: #eee !important;
+}
+.post_sb {
+    color: #bbb !important;
+}
+.post_edit span{
+    color: #eee;
+}
+.post_edit p {
+    color: #eee !important;
+}
+.post_edit img {
+    border-radius: 10px;
+}
+.levet > button {
+    background-color: #345 !important;
+}
+.levet >input {
+    
+    background-color: #444 !important;
+    border-color: #555 !important;
+}
+/* **********************下面是评论列表的黑化************************ */
+.reback_title {
+    color: #eee !important;
+}
+.post_name {
+    color: #eee !important;
+}
+.post img{
+    border-radius: 10px;
+}
+.ng-star-inserted .post {
+    border-bottom: 1px solid #444 !important;
+}
+.comment_box,
+.comment_box_title{
+    background: none !important;
+    /* background-color: #444; */
+    color: #eee !important;
+    border-color: #444 !important;
+}
+.comment_form {
+    background: none !important;
+    background-color: #444 !important;
+}
+.flot_icon0 {
+    background: none !important;
+    background-color: rgba(0, 98, 255, 0.1) !important;
+    border-radius: 4px !important;
+    border: 1px solid #369
+}
+.flot_icon1 {
+    background: none !important;
+    background-color: rgba(255, 0, 0, .1) !important;
+    border-radius: 4px !important;
+    border: 1px solid #933
+}
+.flot_icon2 {
+    background: none !important;
+    background-color: rgba(255, 210, 0, 0.1) !important;
+    border-radius: 4px !important;
+    border: 1px solid #983
+}
+.flot_icon3 {
+    background: none !important;
+    background-color: rgba(0, 255, 13, 0.1) !important;
+    border-radius: 4px !important;
+    border: 1px solid #393
+}
+.flot_icon4 {
+    background: none !important;
+    background-color: rgba(200, 200, 200, .1) !important;
+    border-radius: 4px !important;
+    border: 1px solid #999
+}
+/* *********************写评论的页面************************ */
+.tox-edit-area iframe{
+    background-color: #222 !important;
+}
+.tox-editor-header *{
+    background-color: #999 !important;
+}
+.yidun_intellisense *{
+    background-color: #444;
+}
+.yidun_intellisense--light .yidun_intelli-control {
+    border: 1px solid #555 !important;
+}
+.yidun_intellisense--light .yidun_intelli-icon,
+.yidun_intellisense--light .yidun_intelli-icon * {
+    background-color: #333 !important;
+    transition: background-color .3s;
+}
+.yidun_intellisense--light:hover .yidun_intelli-icon,
+.yidun_intellisense--light:hover .yidun_intelli-icon * {
+    background-color: #1890ff !important;
+}
+.yidun_intellisense--light .yidun_intelli-tips {
+    color: #eee !important;
+}
+
+.tox-statusbar{
+    border-top: 1px solid #555 !important;
+}
+.tox-statusbar,
+.tox-statusbar *{
+    background-color: #222 !important;
+    color: #eee !important;
+}
+.tox,
+.tox-tinymce {
+    border-color: #555 !important;
+}
+/* ****************我的消息界面****************** */
+.user_info {
+    background: none !important;
+    background-color: #333 !important;
+    border: 1px solid #555 !important;
+}
+
+/* *******************END*********************** */
