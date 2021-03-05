@@ -2,8 +2,8 @@
  * @Autor: Jason
  * @Date: 2021-03-05 11:52:12
  * @LastEditors: Jason
- * @LastEditTime: 2021-03-05 15:00:58
- * @FilePath: /html/popup.html
+ * @LastEditTime: 2021-03-05 15:57:45
+ * @FilePath: /src/html/popup.html
  * @description: description
 -->
 <!DOCTYPE html>
@@ -15,13 +15,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>深度论坛主题切换</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <style>
+        body {
+            width: 200px;
+        }
+        h1 {
+            margin: 10px auto;
+            font-size: 18px;
+            text-align: center;
+        }
+        .card-body > div {
+            margin-bottom: 10px;
+        }
+        .card-body > div:last-child {
+            margin-bottom: 0;
+        }
+        .card-body > div .btn {
+            width: 100%;
+        }
+        .footer {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="themeList">
+    <h1>深度论坛主题切换</h1>
+    <div class="card">
+        <div class="card-body" id="themeList">
+            <div>
+                <button type="button" id="default" class="btn btn-light">default</button>
+            </div>
+            <div>
+                <button type="button" id="dark" class="btn btn-dark">Dark</button>
+            </div>
+        </div>
+    </div>
 
-        <button type="button" id="default" class="btn btn-primary">default</button>
-        <button type="button" id="dark" class="btn btn-primary">dark</button>
+    <div class="footer">
+        <p>Powered by <a href="https://huangliangbo.com" target="_blank">神经蛙</a> && <a href="https://www.cnblogs.com/maicss" target="_blank">Maicss</a></p>
     </div>
 
 

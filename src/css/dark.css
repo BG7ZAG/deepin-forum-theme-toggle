@@ -13,6 +13,16 @@ h6{
 body app-root app-bbs>div {
     background-color: #222 !important;
 }
+.nav {
+    border: none !important;
+}
+.languageS {
+    border: 1px solid #444;
+}
+.languageS ,
+.languageS *{
+    background-color: #222 !important;
+}
 /* 页面头部，有搜索框的部分 */
 .top{
     background-color: #252525 !important;
@@ -21,7 +31,7 @@ ul > li span{
     color: #eee ;
 }
 ul > .activeNav span{
-    color: #1979ff ;
+    color: #1979ff !important;
 }
 .search_box {
     background-color: #333 !important;
@@ -36,17 +46,25 @@ ul > .activeNav span{
     border-radius: 8px 0 0 8px;
     /* 这里可以要做一个箭头图标!!! */
 }
+.type_search ul{
+    background-color: #222 !important;
+}
 .search_box > input {
     background-color: #333;
 }
 .search_box > .button {
-    background-color: #2a6bc7 !important;
+    background-color: #1979ff !important;
 }
 .userInfoMenuWrap *{
     background-color: #222 !important;
 }
 .userInfoMenuWrap > *{
     box-shadow: 0px 3px 10px 10px rgba(0, 0, 0, .2) !important;
+    
+    border: 1px solid #555 !important;
+}
+.userInfoMenu > div:nth-child(2) {
+    border-bottom: 1px solid #444 !important;
 }
 .userInfoMenuWrap .userName{
     color: #eee !important;
@@ -78,20 +96,28 @@ ul > .activeNav span{
 .post .postWrap {
     border-bottom: 1px solid #444 !important;
 }
-.main_left div .post_pc .post:hover {
+/* 屏蔽点燃效果 */
+.main_left div .post_pc .post:hover,
+.main .postList .post:hover{
     background-color: #333 !important;
 }
 
 .myPage button ,
-.position_page button{
+.position_page button,
+.postPage button,
+.page_p button,
+.myPagination button{
     background: none !important;
     background-color: #444 !important;
     border: 1px solid #555;
     color: #aaa;
     box-shadow: none !important;
 }
-.myPage form
-.position_page form {
+.myPage form,
+.position_page form ,
+.postPage form ,
+.page_p form ,
+.myPagination form{
     color: #eee;
 }
 form input {
@@ -99,8 +125,11 @@ form input {
     background-color: #444 !important;
     color: #aaa;
 }
-.myPage button.active 
-.position_page button.active {
+.myPage button.active ,
+.position_page button.active ,
+.postPage button.active ,
+.page_p button.active ,
+.myPagination button.active{
     border: 3px solid #1979ff;
 }
 /* 侧边模块 */
@@ -158,6 +187,13 @@ form input {
     background-color: #444 !important;
     border-color: #555 !important;
 }
+pre {
+    border-radius: 8px;
+}
+code, pre {
+    background-color: #222 !important;
+    color: #fff;
+}
 /* **********************下面是评论列表的黑化************************ */
 .reback_title {
     color: #eee !important;
@@ -168,7 +204,7 @@ form input {
 .post img{
     border-radius: 10px;
 }
-.ng-star-inserted .post {
+.comment .post {
     border-bottom: 1px solid #444 !important;
 }
 .comment_box,
@@ -256,5 +292,117 @@ form input {
     background-color: #333 !important;
     border: 1px solid #555 !important;
 }
+.user_info .userName {
+    color: #eee !important;
+}
 
+.contetn_left .user_info .ulContent .liItem span:first-child {
+    color: #eee !important;
+}
+.contetn_left > ul {
+    background-color: #333 !important;
+    border:1px solid #555 !important;
+
+}
+.contetn_left > ul .activeNav span {
+    color: #fff !important;
+}
+.contetn_right {
+    background-color: #333 !important;
+    border: 1px solid #555 !important;
+}
+.nav_title {
+    border-bottom: 1px solid #555 !important;
+}
+.boxTitleMe {
+    background-color: #333 !important;
+}
+.boxTitleMe li{
+    color: #eee !important;
+}
+.subReply .postMe .postTitleMe .postLinMe .leftMe span:first-child {
+    color: #eee !important;
+}
+.subReply .postMe .postTitleMe .postQuoteMe {
+    color: #ddd !important;
+}
+.subReply {
+    border-bottom: 1px solid #444 !important;
+}
+.subReply .postMe .formSubMe {
+    background-color: #444 !important;
+}
+.formSubMe a.postTimeMe {
+    color: #ddd !important;
+}
+/* 我的消息-帖子 */
+.postPcMe .postMe .postTitleMe .postListMe .onePostMe {
+    background: none !important;
+    background-color: #444 !important;
+}
+.postPcMe .postMe .postTitleMe .postListMe .onePostMe .onePostItemWrap .oneUserName {
+    color: #777 !important;
+}
+.postPcMe .postMe .postTitleMe .postListMe .onePostMe .formSubMe {
+    background: none !important;
+    background-color: rgba(0, 0, 0, .1) !important;
+}
+.postPcMe {
+    border-bottom: 1px solid #444 !important;
+    border-radius: 0 !important;
+}
+/* ********************我的贴子界面********************* */
+.nav > li {
+    color: #eee !important;
+} 
+.nav > li.activeNav {
+    color: #1979ff !important;
+} 
+/* ********************板块内部（体验心得）******************** */
+.cont > span {
+    color: #eee !important;
+}
+.info .count {
+    border-top: 1px dashed #555 !important;
+}
+.info .op_btn > button {
+    color: #eee !important;
+    background-color: #333 !important;
+    border: 1px solid #555 !important;
+}
+.info .op_btn > button:hover {
+    color: #1979ff !important;
+    background-color: #333 !important;
+    border: 1px solid #1979ff !important;
+}
+.op_box {
+    border-bottom: 1px solid #444 !important;
+}
+.comment_nav .select_box{
+    border: 1px solid #444 !important;
+}
+/* *******************发帖页面*********************** */
+.box > .title_top {
+    border-bottom: 1px solid #444;
+}
+.box > .title_top .navadsf span{
+    color: #eee ;
+}
+.select_box .item {
+    color: #eee;
+    border: 2px solid #555;
+    border-radius: 4px !important;
+}.ant-select-selection {
+    background-color: #444 !important;
+    border: 1px solid #555 !important;
+}
+.ant-input {
+    border: 1px solid #555 !important;
+}
+/* #posting_tinyEdtor_ifr html body{
+    background-color: #fff !important;
+}
+#posting_tinyEdtor_ifr html body h1{
+    color: #fff !important;
+} */
 /* *******************END*********************** */

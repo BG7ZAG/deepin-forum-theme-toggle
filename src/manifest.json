@@ -12,7 +12,7 @@
         "declarativeContent",
         "tabs","http://*/*", "https://*/*"
     ],
-    "web_accessible_resources": ["css/dark.css","css/dark-2.css"],
+    "web_accessible_resources": ["css/dark.css"],
     "background": {
         "scripts": [
             "js/background.js"
