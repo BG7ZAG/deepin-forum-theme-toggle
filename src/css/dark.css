@@ -253,13 +253,16 @@ code, pre {
 }
 /* *********************写评论的页面************************ */
 .tox-edit-area iframe{
-    background-color: #222 !important;
+    background-color: #cdcdcd !important;
 }
 .tox-editor-header *{
     background-color: #999 !important;
 }
 .yidun_intellisense *{
     background-color: #444;
+}
+.yidun.yidun--light .yidun_tips {
+    color: #fff;
 }
 .yidun_intellisense--light .yidun_intelli-control {
     border: 1px solid #555 !important;
@@ -276,6 +279,7 @@ code, pre {
 .yidun_intellisense--light .yidun_intelli-tips {
     color: #eee !important;
 }
+
 
 .tox-statusbar{
     border-top: 1px solid #555 !important;
@@ -402,12 +406,9 @@ code, pre {
 .ant-input {
     border: 1px solid #555 !important;
 }
-/* #posting_tinyEdtor_ifr html body{
-    background-color: #fff !important;
+.tox .tox-edit-area__iframe {
+    background-color: #cdcdcd !important;
 }
-#posting_tinyEdtor_ifr html body h1{
-    color: #fff !important;
-} */
 /* 我的帖子-我的回复 */
 .replyList ,
 .replyList *{
