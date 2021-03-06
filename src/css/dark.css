@@ -258,6 +258,9 @@ code, pre {
 .yidun_intellisense *{
     background-color: #444;
 }
+.yidun.yidun--light .yidun_tips {
+    color: #fff;
+}
 .yidun_intellisense--light .yidun_intelli-control {
     border: 1px solid #555 !important;
 }
