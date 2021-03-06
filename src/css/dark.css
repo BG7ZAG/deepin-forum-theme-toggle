@@ -250,7 +250,7 @@ code, pre {
 }
 /* *********************写评论的页面************************ */
 .tox-edit-area iframe{
-    background-color: #222 !important;
+    background-color: #cdcdcd !important;
 }
 .tox-editor-header *{
     background-color: #999 !important;
