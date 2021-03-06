@@ -94,7 +94,8 @@ ul > .activeNav span{
     color: #ddd !important;
 }
 .post .postWrap {
-    border-bottom: 1px solid #444 !important;
+    /* border-bottom: 1px solid #444 !important; */
+    border-bottom: none !important;
 }
 /* 屏蔽点燃效果 */
 .main_left div .post_pc .post:hover,
@@ -170,11 +171,10 @@ form input {
 .post_sb {
     color: #bbb !important;
 }
-.post_edit span{
-    color: #eee;
-}
+.post_edit >*,
+.post_edit span ,
 .post_edit p {
-    color: #eee !important;
+    color :#eee !important;
 }
 .post_edit img {
     border-radius: 10px;
@@ -193,6 +193,9 @@ pre {
 code, pre {
     background-color: #222 !important;
     color: #fff;
+}
+.comment_box .comment_box_contet .comment_conten {
+    border-bottom: 1px solid #444 !important;
 }
 /* **********************下面是评论列表的黑化************************ */
 .reback_title {
@@ -250,16 +253,13 @@ code, pre {
 }
 /* *********************写评论的页面************************ */
 .tox-edit-area iframe{
-    background-color: #cdcdcd !important;
+    background-color: #222 !important;
 }
 .tox-editor-header *{
     background-color: #999 !important;
 }
 .yidun_intellisense *{
     background-color: #444;
-}
-.yidun.yidun--light .yidun_tips {
-    color: #fff;
 }
 .yidun_intellisense--light .yidun_intelli-control {
     border: 1px solid #555 !important;
@@ -408,4 +408,76 @@ code, pre {
 #posting_tinyEdtor_ifr html body h1{
     color: #fff !important;
 } */
+/* 我的帖子-我的回复 */
+.replyList ,
+.replyList *{
+    background-color: #444 !important;
+    color: #ccc !important ;
+}
+/* 我的消息-系统消息 */
+.message_pc .post_top>span:first-child {
+    color: #eee !important;
+
+}
+.message_pc .post_bottom .messagefmt {
+    color: #bbb !important;
+}
+.message_pc .post {
+    border-bottom: 1px solid #444 !important;
+}
+.letter .letter_item:hover { 
+    /* 屏蔽点燃效果 */
+    background-color: #333 !important;
+}
+/* 我的消息-私信 */
+.letter .letter_item .letter_content .con_top .username {
+    color: #eee !important;
+}
+.letter .letter_item .letter_content {
+    border-bottom: 1px solid #444 !important;
+}
+/* 我的积分 */
+.bbs_points .nav {
+    background-color: #333 !important;
+    border-bottom: 1px solid #444 !important;
+}
+.bbs_points .points_main .points .money .m_db .m_font .m_title {
+    color: #bbb !important;
+}
+.bbs_points .points_main .points .money .m_db .m_font .m_number {
+    color: #fff !important;
+}
+.ant-table-body *{
+    border-color: #444 !important;
+}
+.ant-table-body .ant-table-thead *{
+    background-color: #444 !important;
+    color: #eee;
+}
+.ant-table {
+    color: #fff !important;
+}
+.bbs_points .points_main .rule .rule_one {
+    background: none !important;
+}
+.commentList .commentTitle {
+    background-color: #333 !important;
+    color: #eee !important;
+    border-bottom: 1px solid #444 !important;
+}
+.commentList .commentWrap .commentText {
+    color: #eee !important;
+}
+.commentList .commentWrap .formSub {
+    background-color: #444 !important;
+}
+.commentList .commentWrap .formSub .postTime {
+    color: #bbb !important;
+}
+.commentList .commentWrap .commentBor {
+    border-bottom: 1px solid #444 !important;
+}
+.commentList .commentWrap:hover {
+    background-color: #333 !important;
+}
 /* *******************END*********************** */
