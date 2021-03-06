@@ -10,14 +10,20 @@
     },
     "permissions": [
         "declarativeContent",
-        "tabs","http://*/*", "https://*/*"
+        "tabs",
+        "http://*/*",
+        "https://*/*",
+        "storage"
     ],
-    "web_accessible_resources": ["css/dark.css"],
+    "web_accessible_resources": [
+        "css/dark.css"
+    ],
     "background": {
         "scripts": [
             "js/background.js"
         ]
     },
+    "homepage_url": "https://gitee.com/hlbj105/deepin-forum-theme-toggle",
     "page_action": {
         "default_icon": "img/icon.png",
         "default_title": "深度论坛主题切换",
