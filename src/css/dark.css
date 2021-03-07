@@ -107,6 +107,7 @@ ul > .activeNav span{
 .position_page button,
 .postPage button,
 .page_p button,
+.page button,
 .myPagination button{
     background: none !important;
     background-color: #444 !important;
@@ -118,6 +119,7 @@ ul > .activeNav span{
 .position_page form ,
 .postPage form ,
 .page_p form ,
+.page form ,
 .myPagination form{
     color: #eee;
 }
@@ -130,6 +132,7 @@ form input {
 .position_page button.active ,
 .postPage button.active ,
 .page_p button.active ,
+.page button.active ,
 .myPagination button.active{
     border: 3px solid #1979ff;
 }
@@ -258,14 +261,16 @@ code, pre {
 .tox-editor-header *{
     background-color: #999 !important;
 }
-.yidun_intellisense *{
+.yidun_intellisense >*{
     background-color: #444;
 }
+
 .yidun.yidun--light .yidun_tips {
     color: #fff;
 }
 .yidun_intellisense--light .yidun_intelli-control {
     border: 1px solid #555 !important;
+    background-color: #444 !important;
 }
 .yidun_intellisense--light .yidun_intelli-icon,
 .yidun_intellisense--light .yidun_intelli-icon * {
@@ -388,6 +393,53 @@ code, pre {
 .comment_nav .select_box{
     border: 1px solid #444 !important;
 }
+.select_box ul {
+    background-color: #222 !important;
+    border: 1px solid #444 !important;
+}
+/* 管理部分 */
+.post_r {
+    background-color: #555;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.post_r .dealDiv > ul {
+    background-color: #222 !important;
+    border: 1px solid #444 !important;
+}
+.post_r .dealDiv > ul li:hover{
+    background-color: #333 !important;
+}
+/* 弹窗 */
+section {
+    background-color: #333 !important;
+}
+.content {
+    color: #eee !important;
+}
+header {
+    color: #eee !important;
+}
+.module_content_title > span {
+    color: #bbb !important;
+}
+.module_content_radio > label ,
+.check {
+    color: #eee !important;
+}
+.textare ,
+textarea{
+    background-color: #444 !important;
+    color: #eee !important;
+    border: 1px solid #555 !important;
+}
+.radioButton .dis ,
+.btnconten .dis ,
+.prohibit .myBtn span:first-child{
+    background-color: #444 !important;
+    color: #eee !important;
+    box-shadow: none !important;
+}
 /* *******************发帖页面*********************** */
 .box > .title_top {
     border-bottom: 1px solid #444;
@@ -481,4 +533,33 @@ code, pre {
 .commentList .commentWrap:hover {
     background-color: #333 !important;
 }
+/* ***************板块管理**************** */
+.manageMain .ant-tabs {
+    color: #eee;
+}
+.main .manage{
+    background-color: #333 !important;
+    border: 1px solid #555;
+    border-radius: 8px;
+}
+.main .manage .ant-tabs-bar {
+    border-bottom: 1px solid #444;
+}
+.main .ant-form-item-label>label {
+    color: #eee;
+}
+.main .manage input{
+    color: #eee;
+}
+.main .manage .manageMain .prohibitUsers .userList .userRight{
+    border: 1px solid #444 !important;
+}
+.main .manage .manageMain .prohibitUsers .userList .userRight .proUser {
+    border: 1px solid #444 !important;
+}
+.ant-form-item ,
+.ant-radio-group, .ant-radio-wrapper {
+    color: #eee !important;
+}
+
 /* *******************END*********************** */
