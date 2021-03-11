@@ -2,7 +2,7 @@
  * @Autor: Jason
  * @Date: 2021-03-05 12:01:22
  * @LastEditors: Jason
- * @LastEditTime: 2021-03-11 09:29:31
+ * @LastEditTime: 2021-03-11 09:34:15
  * @FilePath: /src/js/background.js
  * @description: description
  */
@@ -27,8 +27,6 @@ let tabId = null;
 
 // 上次选择的主题
 let lastCss = "";
-
-let tabIds = []
 
 /**
  * 设置主题
@@ -75,16 +73,13 @@ const init = (tabId) => {
   });
 };
 
-const reg = /^https\:\/\/bbs\.deepin\.org/
+const reg = /^https\:\/\/bbs\.deepin\.org/;
 // 监听标签变化
 chrome.tabs.onUpdated.addListener(function (id, info, tab) {
   if (info.status == "loading") {
     //   获取当前页面URL
     if (reg.test(tab.url)) {
-      if(!tabIds.includes(id)){
-        init(id);
-        tabIds.push(id)
-      }
+      init(id);
     }
   }
 });
@@ -92,17 +87,6 @@ chrome.tabs.onUpdated.addListener(function (id, info, tab) {
 chrome.tabs.onCreated.addListener(function (tab) {
   //检测新标签打开的页面是否为目标页面
   if (reg.test(tab.pendingUrl)) {
-    if(!tabIds.includes(tab.id)){
-      init(tab.id);
-      tabIds.push(tab.id)
-    }
-  }
-});
-
-// 标签移除时移除缓存id
-chrome.tabs.onRemoved.addListener(function(tabId, removeInfo) {
-  if(tabIds.includes(tabId)){
-    let idx = tabIds.indexOf(tabId)
-    tabIds.splice(idx,1)
+    init(tab.id);
   }
 });
