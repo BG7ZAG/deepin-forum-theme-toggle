@@ -592,5 +592,24 @@ textarea{
 .ant-radio-group, .ant-radio-wrapper {
     color: #eee !important;
 }
-
+/* **************个人主页页面的适配************** */
+.user .user_info {
+    background: none !important;
+    border:none !important;
+}
+.details span{
+    color: #eee !important;
+}
+.user .mypost .nav {
+    background: none !important;
+}
+.user .mypost .comm_title{
+    border-bottom: 1px solid #444 !important;
+}
+.user .mypost .comm_title *{
+    color: #eee !important;
+}
+.user .mypost .comm_title .select_box{
+    border:1px solid #555 !important;
+}
 /* *******************END*********************** */
